@@ -94,7 +94,7 @@ namespace asteroids {
             controller.up.onEvent(ControllerButtonEvent.Repeated, () => this.handlePressed(Button.Up));
             controller.up.onEvent(ControllerButtonEvent.Released, () => this.handleReleased(Button.Up));
             controller.down.onEvent(ControllerButtonEvent.Pressed, () => this.handlePressed(Button.Down));
-            controller.down.onEvent(ControllerButtonEvent.Released, () => this.handlePressed(Button.Down));
+            controller.down.onEvent(ControllerButtonEvent.Repeated, () => this.handlePressed(Button.Down));
             controller.down.onEvent(ControllerButtonEvent.Released, () => this.handleReleased(Button.Down));    
         }
 
