@@ -1,0 +1,1 @@
+setTimeout(() => new asteroids.Game(), 1);
