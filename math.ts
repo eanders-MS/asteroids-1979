@@ -43,20 +43,22 @@ namespace asteroids {
         }
 
         /**
-         * angle in [0..100]
+         * angle in NUM_SLICES
          */
         public static sin(angle: number): Fx8 {
-            while (angle < 0) angle += NUM_SLICES;
-            angle = Math.floor(angle) % NUM_SLICES;
+            angle %= NUM_SLICES;
+            if (angle < 0) angle += NUM_SLICES;
+            angle = Math.floor(angle);
             return cachedSin[angle];
         }
 
         /**
-         * angle in [0..100]
+         * angle in NUM_SLICES
          */
         public static cos(angle: number): Fx8 {
-            while (angle < 0) angle += NUM_SLICES;
-            angle = Math.floor(angle) % NUM_SLICES;
+            angle %= NUM_SLICES;
+            if (angle < 0) angle += NUM_SLICES;
+            angle = Math.floor(angle);
             return cachedCos[angle];
         }
 
