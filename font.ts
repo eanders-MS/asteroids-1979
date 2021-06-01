@@ -130,12 +130,7 @@ namespace asteroids {
             ]),
             9: new Polygon([
                 new Polyline([Vec2.N(4, 6), Vec2.N(4, 0), Vec2.N(0, 0), Vec2.N(0, 3), Vec2.N(4, 3)]),
-            ]),
-            '©': new Polygon([
-                // TODO update this glyph. Currently just copied from 'O'.
-                new Polyline([Vec2.N(0, 0), Vec2.N(4, 0), Vec2.N(4, 6), Vec2.N(0, 6), Vec2.N(0, 0)]),
             ])
         }
-
     }
 }

@@ -16,6 +16,7 @@ namespace asteroids {
         Saucer
     }
 
+    // TODO: Remove dependency on BaseSprite.
     export class Game extends sprites.BaseSprite {
         public static Instance: Game;
         public static LEFT_EDGE = Fx8(-80);
